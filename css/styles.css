@@ -1,3 +1,6 @@
+body{
+    text-align: center;
+}
 #head{
     display: flex;
 }
@@ -23,6 +26,8 @@
 #textPrice{
     text-align: center;
     pading-top:20px;
+    box-shadow: 20px;
+    background-color: orangered;
 }
 #delivery{
     text-align: center;
