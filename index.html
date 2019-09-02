@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/materialize.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script   src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/materilize.js"></script>
     <script src="js/scripts.js"></script> 
     <title>Slice Pizza</title>
 </head>
@@ -16,13 +18,64 @@
       <img src="img/slice.png" alt="slice">
       <h1 class="intro">SLICE PIZZA</h1>
    </div>
+   <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#slice">Slice Pizza</a></li>
+            <li><a href="#order">Order Now</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+  </div>
+  <div id="slice">
    <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">KARIBU</h1>
       <p class="lead">A slice of heaven!</p>
     </div>
-  </div>
-     
     </div>
+  <div class="card bg-dark text-orangered">
+    <img src="img/slice2.jpeg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="card-title">PIZZA IS SWEET WHILE HOT! GET A FEEL OF OUR TASTE TODAY.</h5>
+    </div>
+  </div>
+  </div>
+  <div id="order">
+    <form class="pizza">
+        <label>Select Pizza Size:</label>
+        <select class="form-control" id="size">
+            <option value="Large">Large Ksh 1000</option>
+            <option value="Medium">Medium Ksh 600</option>
+            <option value="Small">Small Ksh 300 </option>
+        </select><br><br><br><br>
+
+        <label>Select Pizza Crust:</label>
+        <select class="form-control" id="crust">
+            <option value="Crispy">Cripsy</option>
+            <option value="Stuffed">Stuffed </option>
+            <option value="Glutten-free">Glutten Free </option>
+        </select><br><br><br><br>
+
+        <label>Select topping(s):</label>
+        <select class="form-control" id="toppings">
+            <option value="Green peppers">Green Peppers</option>
+            <option value="Pineapple">Pineapple </option>
+            <option value="Onions">Onions </option>
+            <option value="Spinach">Spinach </option>
+            <option value="Kales">Kales </option>
+            <option value="Pepperoni">Pepperoni </option>
+            <option value="Mushrooms">Mushrooms </option>
+            <option value="Strawberry">Strawberry </option>
+            <option value="Extra Cheese">Extra Cheese </option>
+            <option value="Black Olives">Black Olives </option>
+            <option value="Bacon">Bacon </option>
+            <option value="Sausage">Sausage </option>
+        </select><br><br><br>
+        <input type="submit" class="btn btn-succees btn-rounded waves-effect btn-lg" id="totalCost" value="Check Out!!!">
+    </form>
+  </div>
 </body>
 </html>
