@@ -20,3 +20,11 @@
 .slice{
     margin-top: 0px;
 }
+#textPrice{
+    text-align: center;
+    pading-top:20px;
+}
+#delivery{
+    text-align: center;
+
+}
